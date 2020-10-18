@@ -12,9 +12,9 @@ pipeline {
 					sh 'jar -cvf Mayer-HW2-P2.war -C Mayer-HW1-P2/WebContent/ .'
 					sh 'echo ${BUILD_TIMESTAMP}'
 					sh 'echo $USER'
-					sh "docker login -u abulh4298 -p swe645-group1?"
+					sh "docker login -u abulh4298 -p swe645-group1? 2> /dev/null"
 					def customImage = docker.build("abulh4298/mayersurvey645:${BUILD_TIMESTAMP}")
-				 }
+				}
 			}
 		}
 		stage("pushing Image to DockerHub") {
