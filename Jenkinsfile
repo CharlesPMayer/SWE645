@@ -16,7 +16,7 @@ pipeline {
 					def customImage = docker.build("abulh4298/mayersurvey645:${BUILD_TIMESTAMP}")
 				}
 			}
-		 }
+		}
 		stage("pushing Image to DockerHub") {
 			steps {
 				script {
