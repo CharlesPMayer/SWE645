@@ -9,7 +9,7 @@ pipeline {
 				script {
 					checkout scm
 					sh 'rm -rf *.war'
-					sh 'jar -cvf Mayer-HW2-P2.war -C WebContent/ .'
+					sh 'jar -cvf Mayer-HW2-P2.war -C Mayer-HW1-P2/WebContent/ .'
 					sh 'echo ${BUILD_TIMESTAMP}'
 					sh "docker login -u abulh4298 -p ${DOCKERHUB_PASS}"
 					def customImage = docker.build("abulh4298/mayersurvey645:${BUILD_TIMESTAMP}")
