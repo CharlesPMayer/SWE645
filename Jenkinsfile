@@ -19,7 +19,7 @@ pipeline {
 		stage("pushing Image to DockerHub") {
 			steps {
 				script {
-					sh 'docker push abulh4298/mayersurvey645:${BUILD_TIMESTAMP}
+					sh 'docker push abulh4298/mayersurvey645:${BUILD_TIMESTAMP}'
 				}
 			}
 		}
