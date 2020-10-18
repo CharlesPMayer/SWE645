@@ -14,7 +14,7 @@ pipeline {
 					sh 'echo $USER'
 					sh "docker login -u abulh4298 -p swe645-group1?"
 					def customImage = docker.build("abulh4298/mayersurvey645:${BUILD_TIMESTAMP}")
-				}
+				 }
 			}
 		}
 		stage("pushing Image to DockerHub") {
