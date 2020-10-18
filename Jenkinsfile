@@ -25,12 +25,12 @@ pipeline {
 		}
 		stage("Deploying to Rancher as single pod") {
 			steps {
-				sh 'kubectl set image deployment/mayersurvey-pipeline mayersurvey-pipeline=abulh4298/mayersurvey645:0.2 -n jenkins-pipeline'
+				sh 'kubectl set image deployment/mayersurvey-pipeline mayersurvey-pipeline=abulh4298/mayersurvey645:0.1 -n jenkins-pipeline'
 			}
 		}
 		stage("Deploying to Rancher as with load balencer") {
 			steps {
-				sh 'kubectl set image deployment/ss-port ss-port=abulh4298/mayersurvey645:0.2 -n jenkins-pipeline'
+				sh 'kubectl set image deployment/ss-port ss-port=abulh4298/mayersurvey645:0.1 -n jenkins-pipeline'
 			}
 		}
 	}
