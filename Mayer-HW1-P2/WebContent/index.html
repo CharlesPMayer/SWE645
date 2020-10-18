@@ -1,0 +1,78 @@
+<!-- 
+Charles P Mayer
+G01090920
+cmayer4@masonlive.gmu.edu
+
+This file is the form used for part 2 of HW1
+I am using an external css called mayerhw1p2.css
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="mayerhw1p2.css">
+	<title>Student Survey</title>
+</head>
+<body>
+	<h1> Student Survey!!!!!</h1>
+	<form method="POST" action="submitted.html">
+		First Name: <input type="text" size="40" maxlength="40" name="firstname" required="required"/><br/>
+		Last Name: <input type="text" size="40" maxlength="40" name="lastname" required="required"/><br/>
+		Street Address: <input type="text" size="40" maxlength="40" name="streetaddress" required="required"/><br/>
+		City: <input type="text" size="40" maxlength="40" name="city" required="required"/><br/>
+		State: <input type="text" size="40" maxlength="40" name="state" required="required"/><br/>
+		Telephone Number: <input type="text" size="40" maxlength="40" name="telephonenumber" required="required"/><br/>
+		Email: <input type="text" size="40" maxlength="40" name="email" required="required"/><br/>
+		Date of Survey: <input type="text" size="40" maxlength="40" name="lastname" required="required"/><br/><br/>
+		
+		What did you liked most about the Campus:<br/>
+		<input type="checkbox" id="students" name="students" value="students">
+  		<label for="students"> students</label>
+		<input type="checkbox" id="location" name="location" value="location">
+  		<label for="location"> location</label>
+  		<input type="checkbox" id="campus" name="campus" value="campus">
+  		<label for="campus"> campus</label>
+  		<input type="checkbox" id="atmosphere" name="atmosphere" value="atmosphere">
+  		<label for="atmosphere"> atmosphere</label>
+  		<input type="checkbox" id="dormrooms" name="dormrooms" value="dormrooms">
+  		<label for="dormrooms"> dorm rooms</label>
+  		<input type="checkbox" id="sports" name="sports" value="sports">
+  		<label for="sports"> sports</label><br/><br/>
+  		
+  		How did you become interested in the university:<br/>
+  		<input type="radio" id="friends" name="interested" value="friends">
+  		<label for="friends">friends</label>
+  		<input type="radio" id="television" name="interested" value="television">
+  		<label for="television">television</label>
+  		<input type="radio" id="internet" name="interested" value="internet">
+  		<label for="internet">internet</label>
+  		<input type="radio" id="other" name="interested" value="other">
+  		<label for="other">other</label><br/><br/>
+  		
+  		<label for="recommend">Your likelihood of recommending this school to other prospective students:</label>
+  		<select name="recommend" id="recommend">
+  		<option value="verylikely">very likely</option>
+    	<option value="likely">likely</option>
+    	<option value="unlikely">unlikely</option>
+  		</select><br/><br/>
+  		
+  		Raffle!!! Enter AT LEAST ten comma separated numbers ranging from 1 through 100:<br/>
+  		Example - 1,2,3,4,5,6,7,8,9,100<br/>
+  		 <input type="text" size="40" maxlength="400" name="raffle" required="required"
+  		 pattern="([1-9]|[1-9][0-9]|100)(,([1-9]|[1-9][0-9]|100)){9,99}"/><br/><br/>
+  		
+  		<label for="comments">Additional comments:</label><br/>
+		<textarea id="comments" name="comments" rows="4" cols="50">
+  		</textarea><br/><br/>
+  		
+  		<input type="button" value="Cancel" onclick="msg()">
+  		<input type="submit">
+  		
+  		<script>
+		function msg() {
+  		alert("Your form has been cancled");
+		}
+		</script>
+  		
+	</form>
+</body>
+</html>

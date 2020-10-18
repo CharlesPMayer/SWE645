@@ -1,0 +1,17 @@
+/*
+Charles P Mayer
+G01090920
+cmayer4@masonlive.gmu.edu
+
+This is the external css It is pretty simple and just changes the background and some text
+*/
+
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
